@@ -5,6 +5,7 @@ MadGraph, Pythia8, Delphes, MadAnalysis를 활용하여 LHC 환경의 입자 충
 
 ## 📌 사용 툴
 
+- [FeynRules]: 몬테카를로 시뮬레이션 툴에서 BSM 모델 계산을 위한 모델 파일 생성
 - [MadGraph5_aMC@NLO](https://launchpad.net/mg5amcnlo): 충돌 반응 생성 및 산란단면 계산
 - [Pythia8](http://home.thep.lu.se/~torbjorn/Pythia.html): 하드론화 및 파편화
 - [Delphes](https://delphes.gitlab.io/): 빠른 검출기 시뮬레이션
@@ -16,13 +17,15 @@ MadGraph, Pythia8, Delphes, MadAnalysis를 활용하여 LHC 환경의 입자 충
 
 ## ⚙️ 시뮬레이션 과정
 
-1. **이벤트 생성**
+1. **BSM 모델 파일 생성**
+   - 새로운 입자와 군 구조를 적용하고 게이지를 고려해서 라그랑지안을 적용
+2. **이벤트 생성**
    - `pp > h > tau+ tau-` 반응 시뮬레이션 (MadGraph)
-2. **입자 파편화**
+3. **입자 파편화**
    - Pythia8으로 showering 및 hadronization
-3. **검출기 시뮬레이션**
+4. **검출기 시뮬레이션**
    - Delphes CMS 설정 파일 사용
-4. **데이터 분석**
+5. **데이터 분석**
    - MadAnalysis5로 힉스 보손 mass peak 분석, 시그널 대 백그라운드 비교
 
 ---
