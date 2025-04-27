@@ -1,0 +1,10 @@
+import ../Events/pp_h_tautau/Events/run_01/tag_1_delphes_events.root
+
+define tau = ta+ ta-
+
+plot M(tau) 50 0 300
+
+set main.outputfile = "higgs_mass_peak"
+set main.outputformat = "pdf"
+
+submit
