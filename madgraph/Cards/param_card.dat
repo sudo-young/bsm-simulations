@@ -1,0 +1,22 @@
+########################################
+# BSM Parameter Card for LHT Model
+########################################
+
+BLOCK MASS  # Mass Spectrum
+# PDG code   mass        particle
+25   125.0    # h0 (Higgs boson)
+35   500.0    # Heavy photon (A_H)
+36   1500.0   # Heavy Z boson (Z_H)
+37   1500.0   # Heavy W boson (W_H)
+9000006  2000.0 # Heavy top (T-odd)
+
+BLOCK DECAY
+#  PDG     Width
+25   0.00407     # Higgs total width
+35   0.001       # Heavy photon width
+36   5.0         # Heavy Z width
+37   5.0         # Heavy W width
+
+BLOCK LHTPARAMS
+1   2000.0   # f scale (symmetry breaking scale, TeV)
+2   0.3      # Yukawa coupling constant kappa
